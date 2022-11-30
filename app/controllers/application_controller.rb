@@ -1,4 +1,6 @@
 class ApplicationController < ActionController::Base
-  def index
+  def home
+    render '/index'
   end
+
 end
