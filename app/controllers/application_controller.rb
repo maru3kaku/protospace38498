@@ -1,6 +1,5 @@
 class ApplicationController < ActionController::Base
-  def home
-    render '/index'
+  def index
+    @posts = Prototype.all
   end
-
 end
