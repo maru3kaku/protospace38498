@@ -9,7 +9,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
       t.string :name               #ユーザー名
       t.text :profile              #プロフィール
       t.text :occupation           #所属
-      t.text :position             #役職
+      t.text :position           #役職
       ## Recoverable
       t.string   :reset_password_token
       t.datetime :reset_password_sent_at
