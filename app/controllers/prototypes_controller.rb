@@ -16,6 +16,10 @@ class PrototypesController < ApplicationController
 
   def create
     Prototype.create(prototype_params)
+    if @prototype.save
+      redirect_to prototype
+    else 
+      render :new
   end
 
   def destroy
