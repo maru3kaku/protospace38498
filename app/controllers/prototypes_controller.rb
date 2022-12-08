@@ -36,7 +36,7 @@ class PrototypesController < ApplicationController
   
   private
   def prototype_params
-    params.require(:prototype).permit(:name, :image, :text)
+    params.require(:prototype).permit(:name, :image, :text).merge(user_id: current_user.id)
   end
 
   def move_to_index
