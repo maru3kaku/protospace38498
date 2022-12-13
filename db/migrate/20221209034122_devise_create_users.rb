@@ -6,18 +6,16 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
       ## Database authenticatable
       t.string :email, null: false
       t.string :encrypted_password, null: false
-      t.string :name               #ユーザー名
-      t.text :profile              #プロフィール
-      t.text :occupation           #所属
-      t.text :position           #役職
-      t.text :concept, null: false             #コンセプト
-      t.text :catch_copy, null: false          #キャッチコピー
-      t.string :title, null: false             #コンセプト
-      t.references :user, null: false,foreign_key: true
+      t.string :name,null: false              #ユーザー名
+      t.text :profile,null: false              #プロフィール
+      t.text :occupation,null: false           #所属
+      t.text :position,null: false           #役職
+
+      
       ## Recoverable
       t.string   :reset_password_token
       t.datetime :reset_password_sent_at
-
+      
       ## Rememberable
       t.datetime :remember_created_at
 
