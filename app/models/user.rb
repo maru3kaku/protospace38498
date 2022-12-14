@@ -11,7 +11,7 @@ class User < ApplicationRecord
 
   #has_many :room_users
   #has_many :rooms, through: :room_users
-
+  has_many :comments
   has_many :prototypes
   #belongs_to :user
 end
