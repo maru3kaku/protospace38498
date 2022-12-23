@@ -6,8 +6,6 @@ class CreatePrototypes < ActiveRecord::Migration[6.0]
       t.text :concept
       t.references :user, foreign_key: true
       t.timestamps
-
-      has_many :comments, dependent: :destroy
     end
   end
 end
