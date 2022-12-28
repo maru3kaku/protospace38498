@@ -1,7 +1,7 @@
 class PrototypesController < ApplicationController
   #before_action :set_prototype, except: [:index, :new, :create]
   #before_action :contributor_confirmation, only: [:update]
-  before_action :authenticate_user!
+  before_action :authenticate_user!, only:[:index, :new, :create,:destroy,:edit,:update,:show]
   before_action :move_to_index
 
   def index
